@@ -498,3 +498,28 @@ footer {
     margin-right: 0.10rem;
 }
 /********景点景区 end*******/
+
+/***分页相关**/
+.pagination {
+    padding:0.36rem 0.20rem;
+}
+.pagination li {
+    float: left;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    padding: 0 0.08rem;
+    min-width: 0.36rem;
+    background-color: #fff;
+    border:1px solid #dedede;
+    color: #444444;
+    text-align: center;
+    border-radius: 0.02rem;
+    margin-right:0.05rem;
+    margin-bottom:0.05rem;
+}
+.pagination li.current {
+    background-color: #3d7dca;
+    color: #fff;
+    border-color: #3d7dca;
+}
+/***分页相关 end**/

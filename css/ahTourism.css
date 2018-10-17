@@ -265,6 +265,7 @@ input,textarea{
 }
 .news_box {
     background-color: #f2f2f2;
+    min-height: 5.80rem;
 }
 .news_tit {
     width: 100%;
@@ -313,11 +314,10 @@ input,textarea{
     margin-right: -21px;
 }
 .news_cell {
-    display: block;
+    display: table;
     overflow: hidden;
     padding: 0.10rem;
     position: relative;
-    padding-right: 1.00rem;
 }
 .news_content {
     background-color: #f2f2f2;
@@ -336,6 +336,12 @@ input,textarea{
     transform: scaleY(.5);
     transform-origin: 0 0;
 }
+.left_news_txt {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding-right:0.20rem;
+}
 .left_news_txt p {
     font-size: 0.14rem;
     color: #616a6f;
@@ -349,14 +355,13 @@ input,textarea{
     margin-top: 0.02rem;
 }
 .right_img {
-    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
     width: 0.78rem;
     height: 0.58rem;
-    right:0.10rem;
-    top: 0.10rem;
 }
 .right_img img {
-    width: 100%;
+    width: 0.78rem;
 }
 .check_morenews {
     width: 100%;
@@ -440,7 +445,6 @@ footer {
 
 /********景点景区*******/
 .jdjq_content {
-    padding:0.10rem;
     padding-bottom: 0.20rem;
 }
 .category_lis {
@@ -450,7 +454,9 @@ footer {
 }
 .tr_category {
     position: relative;
+    padding:0 0.10rem;
     padding-bottom: 0.01rem;
+    margin-bottom: 0.15rem;
 }
 .tr_category:after {
     left: -0.10rem;
@@ -501,10 +507,12 @@ footer {
 
 /***分页相关**/
 .pagination {
-    padding:0.36rem 0.20rem;
+    padding:0.36rem 0.10rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .pagination li {
-    float: left;
     height: 0.36rem;
     line-height: 0.36rem;
     padding: 0 0.08rem;
@@ -523,3 +531,60 @@ footer {
     border-color: #3d7dca;
 }
 /***分页相关 end**/
+
+/****新增搜索页面****/
+.search-box {
+    display: table;
+    width: 100%;
+    padding:0.05rem 0.10rem;
+    background-color: #fff;
+    margin:0.15rem 0 0.02rem;
+}
+.search-box .left-input {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 0.035rem;
+    padding-right: 0.07rem;
+    width: 100%;
+}
+.search-box .left-input input {
+    width: 100%;
+    margin: 0;
+    border:0.01rem solid #345e9e;
+    border-radius: 0.02rem;
+    height: 0.30rem;
+    padding-left: 0.12rem;
+    font-size: 0.14rem;
+    color: #333333;
+    line-height: 0.28rem;
+}
+.search-box .rightbtn {
+    display: table-cell;
+    vertical-align: middle;
+    width: 0.62rem;
+    height: 0.30rem;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-border-radius: 0.04rem;
+    -moz-border-radius: 0.04rem;
+    border-radius: 0.04rem;
+    background-color: #345e9e;
+    color: #fff;
+    font-size: 0.14rem;
+    text-align: center;
+    line-height: 0.30rem;
+}
+.search-tip {
+    padding: 0.10rem;
+    padding-left: 0.16rem;
+    background-color: #fff;
+    font-size: 0.12rem;
+    line-height: 0.12rem;
+    color: #999999;
+    margin-bottom: 0.20rem;
+}
+.search-tip .txtred {
+    color: #d87900;
+}
+/****新增搜索页面 end****/

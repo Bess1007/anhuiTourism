@@ -588,3 +588,219 @@ footer {
     color: #d87900;
 }
 /****新增搜索页面 end****/
+
+/*************2018-11-6 新增天气你页面************/
+.weather-block1 {
+    background-color: #0c8de5;
+    color: #fff;
+    padding: 10px;
+}
+.cityname {
+    font-size: 0.23rem;
+    line-height:1.5;
+    color: #fff;
+}
+.weather-block2 {
+    padding: 10px;
+    background-color: #0c8de5;
+    padding-top: 0.28rem;
+    position: relative;
+    height: 1.90rem;
+}
+
+div.left-weatherico {
+    position: absolute;
+    left: -0.56rem;
+    top: 0.20rem;
+    transform: scale(.9);
+    transform-origin: 0 0;
+    background: url("../images/weather.png") no-repeat;
+}
+.right-status {
+    float: right;
+    text-align: right;
+}
+.right-status .temperature {
+    font-size: 0.46rem;
+    color: #fff;
+    position: relative;
+    padding-right: 30px;
+    line-height: 1;
+    margin-bottom: 0.10rem;
+}
+.right-status .temperature .templa-symbol {
+    width: 0.30rem;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.25rem;
+}
+.w-status {
+    margin-bottom: 0.18rem;
+}
+.w-status p {
+    color: #fff;
+    font-size: 0.14rem;
+    line-height:1;
+    padding:0.06rem 0;
+}
+.update-time {
+    font-size: 0.12rem;
+    color: #fff;
+    line-height: 1;
+}
+.weather-block3 {
+    padding:0.10rem 0.06rem;
+    background-color: #fff;
+}
+.forecast {
+    border:1px solid #ececec;
+    border-radius:0.04rem;
+    padding:0 0.10rem;
+}
+.forecast-tit {
+    font-weight:normal;
+    font-size: 0.16rem;
+    border-bottom:1px solid #ececec;
+    line-height: 1;
+    padding:0.14rem 0;
+    color: #1a1a1a;
+}
+.today-forecast {
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    border-bottom:1px solid #ececec;
+}
+.today-forecast ul {
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+}
+.today-forecast .pre-cell {
+    display:inline-block;
+    width: 0.65rem;
+    text-align: center;
+    padding:0.10rem 0;
+}
+.td-time,.td-temp {
+    color: #1a1a1a;
+    font-size: 0.12rem;
+    line-height: 1;
+}
+.w-ico {
+    display: block;
+    height: 0.34rem;
+    width: 100%;
+    position: relative;
+}
+.w-ico i {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -0.32rem;
+    top: 0;
+    background: url(../images/weatherdark.png) no-repeat;
+    transform: scale(0.25);
+    transform-origin: 0 0;
+}
+/*晴天*/
+div .ico-clear {
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: 0 0;
+}
+/*多云*/
+div .ico-cloudy {
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -2.56rem 0;
+}
+/*阴天*/
+div .ico-overcast {
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -7.68rem 0;
+}
+/*雷电*/
+div .ico-thunderstorm{
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -2.56rem -1.36rem;
+}
+/*雾*/
+div .ico-fog{
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -5.12rem -1.36rem;
+}
+/*霜*/
+div .ico-frost{
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -7.68rem -1.36rem;
+}
+/*雾霾*/
+div .ico-smog{
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -2.56rem -2.72rem;
+}
+/*雨*/
+div .ico-rain {
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -5.12rem -2.72rem;
+}
+/*雪*/
+div .ico-snow{
+    width: 2.56rem;
+    height: 1.36rem;
+    -webkit-background-size: 10.24rem 4.08rem;
+    background-size: 10.24rem 4.08rem;
+    background-position: -7.68rem -2.72rem;
+}
+.week-forecast table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.week-forecast table td {
+    padding:0.12rem 0;
+    text-align: left;
+    border-bottom:1px solid #ececec;
+}
+.week-forecast table tr td:last-child {
+    text-align: right;
+}
+.week-forecast table .innerblock p {
+    font-size: 0.14rem;
+    line-height: 1;
+    margin-bottom: 0.10rem;
+    color: #666666;
+}
+.week-forecast table .innerblock p:last-child {
+    margin-bottom: 0;
+}
+.week-forecast table .innerblock.week-time p {
+    font-weight:bold;
+}
+/*************2018-11-6 新增天气你页面 end************/
+
